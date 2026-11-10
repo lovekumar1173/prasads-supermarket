@@ -1,0 +1,175 @@
+@import './styles/global.css';
+@import './styles/responsive.css';
+
+/* Top announcement banner - Royal Emerald with Gold Trim */
+.top-announcement-banner {
+  background: linear-gradient(90deg, #022c22 0%, #064e3b 40%, #047857 70%, #022c22 100%);
+  color: #fef3c7;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.35);
+  font-family: var(--font-brand);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  padding: 8px 16px;
+  text-align: center;
+  position: relative;
+  z-index: 60;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.announcement-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.announcement-icon {
+  color: #fbbf24;
+  filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.5));
+  flex-shrink: 0;
+}
+
+/* Footer Styles */
+.app-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  padding-top: 52px;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 28px 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.footer-brand .brand-name {
+  font-family: var(--font-brand);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 12px 0 18px;
+  max-width: 460px;
+}
+
+.footer-trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  background: linear-gradient(135deg, #ecfdf5 0%, #fffbeb 100%);
+  color: #065f46;
+  border: 1px solid #fcd34d;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.08);
+}
+
+.footer-heading {
+  font-family: var(--font-brand);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link-btn {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: left;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+.footer-link-btn:hover {
+  color: var(--accent-primary);
+  transform: translateX(4px);
+}
+
+.footer-perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-perks li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-body);
+}
+
+.perk-bullet {
+  color: var(--royal-gold);
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.footer-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.heart-icon {
+  color: #e11d48;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-container {
+    padding: 0 16px 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
